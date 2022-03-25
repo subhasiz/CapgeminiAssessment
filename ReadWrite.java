@@ -5,8 +5,8 @@ import java.io.IOException;
 
 public class ReadWrite {
     public static void main(String[] args) {
-        File inf = new File("src/Input.txt");
-        File outf = new File("src/Output.txt");
+        File inf = new File("Input.txt");
+        File outf = new File("Output.txt");
         try (FileReader in = new FileReader(inf); FileWriter out = new FileWriter(outf)) {
             int ch;
             while ((ch = in.read()) != -1) {
